@@ -408,7 +408,7 @@ http://focusbarapp.com/
 
 <http://betterthangrep.com>
 
-(I've since moved on to grin)
+I've since moved on to [grin](http://pypi.python.org/pypi/grin/).
 
 My .ackrc looks like:
 
