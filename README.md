@@ -1,6 +1,6 @@
 # My Setup
 
-Here are some details about my Mac OS X setup, mostly for personal reference for moving to a new machine. Yes, I have [NADD].(http://www.randsinrepose.com/archives/2003/07/10/nadd.html)
+Here are some details about my Mac OS X setup, mostly for personal reference for moving to a new machine. Yes, I have [NADD](http://www.randsinrepose.com/archives/2003/07/10/nadd.html)
 
 ## Every day
 
@@ -254,7 +254,26 @@ There's a more modern-looking icon hosted at <http://henrik.nyh.se/2007/10/open-
 
 To get it to open up a terminal window with iTerm2, I've edited the OpenTerminalHere.app/Contents/Resources/Scripts/main.scpt file and modify the process_item function (note: I've renamed my iTerm2 app from iTerm.app to iTerm2.app):
 
-	on process_item(this_item)		set the_path to POSIX path of this_item		repeat until the_path ends with "/"			set the_path to text 1 thru -2 of the_path		end repeat				set cmd to "cd " & quoted form of the_path & " && echo $'\\ec'"				tell application "iTerm2"			activate			set myterm to (make new terminal)			tell myterm				launch session "Default Session"				tell the last session					write text cmd				end tell			end tell		end tell			end process_item
+	on process_item(this_item)
+		set the_path to POSIX path of this_item
+		repeat until the_path ends with "/"
+			set the_path to text 1 thru -2 of the_path
+		end repeat
+		
+		set cmd to "cd " & quoted form of the_path & " && echo $'\\ec'"
+		
+		tell application "iTerm2"
+			activate
+			set myterm to (make new terminal)
+			tell myterm
+				launch session "Default Session"
+				tell the last session
+					write text cmd
+				end tell
+			end tell
+		end tell
+		
+	end process_item
 
 
 Finally, add this app to the Finder toolbar by right-clicking on the toolbar, choosing "Customize Toolbar...", and dragging the app into the toolbar.
