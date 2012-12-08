@@ -1,6 +1,7 @@
 # My Setup
 
-Here are some details about my Mac OS X setup, mostly for personal reference for moving to a new machine. Yes, I have [NADD](http://www.randsinrepose.com/archives/2003/07/10/nadd.html)
+Here are some details about my Mac OS X setup, mostly for personal reference for moving to a new machine.
+Yes, I have [NADD](http://www.randsinrepose.com/archives/2003/07/10/nadd.html).
 
 ## Every day
 
