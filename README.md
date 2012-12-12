@@ -74,7 +74,7 @@ This pastes the text in the clipboard as courier, and then returns the formattin
  
 ### FoldingText
 
-I use [FoldingText](http://www.foldingtext.com/) for ad-hoc todo list, and code and config fragments. Basically, it holds my context information when I'm working on a particular development task.
+I use [FoldingText](http://www.foldingtext.com/) for maintaining ad-hoc todo lists, code fragments and other text that's relevant to what I'm currently doing. Basically, it holds my context information when I'm working on a particular development task.
 
 ### iTerm2
 
