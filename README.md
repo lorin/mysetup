@@ -199,13 +199,9 @@ Sublime Linter settings (Package Settings -> Sublime Linter -> Settings - User)
 
 
 
-### Anti RSI
+### AntiRSI
 
 [AntiRSI](http://tech.inhelsinki.nl/antirsi/) protects my wrists. Sold nowadays in the Mac app store. There's also a modified version at http://sabi.net/nriley/software/#antirsi 
-
-### Google Chrome Canary
-
-Bleeding edge google code
 
 
 ### 1Password
@@ -241,23 +237,6 @@ Path Finder is my finder replacement.
 
 `Help -> Reveal in Path Finder Toolbar Item` will give instructions on how to add a "Reveal in Path Finder" icon to the Finder toolbar.
 
-
-### Open Terminal Here
-
-"Open Terminal Here" allows you to open up a terminal window in the current Finder directory. 
-
-The original app can be found at <http://www.entropy.ch/software/applescript>. Download the [OpenTerminalHere.app.zip](http://www.entropy.ch/software/applescript) file from that site. 
-
-I use a slightly customized version that uses iTerm2 instead, and uses an updated icon. 
-
-There's a more modern-looking icon hosted at <http://henrik.nyh.se/2007/10/open-terminal-here-and-glob-select-in-leopard-finder>. As described on that site, save the [openterminalhere-droplet.icns](http://henrik.nyh.se/uploads/openterminalhere-droplet.icns) file, and replace OpenTerminalHere.app/Contents/Resources/droplet.icns with openterminalhere-droplet.icns.
-
-To get it to open up a terminal window with iTerm2, I've edited the OpenTerminalHere.app/Contents/Resources/Scripts/main.scpt file and modify the process_item function (note: I've renamed my iTerm2 app from iTerm.app to iTerm2.app):
-
-	on process_item(this_item)		set the_path to POSIX path of this_item		repeat until the_path ends with "/"			set the_path to text 1 thru -2 of the_path		end repeat				set cmd to "cd " & quoted form of the_path & " && echo $'\\ec'"				tell application "iTerm2"			activate			set myterm to (make new terminal)			tell myterm				launch session "Default Session"				tell the last session					write text cmd				end tell			end tell		end tell			end process_item
-
-
-Finally, add this app to the Finder toolbar by right-clicking on the toolbar, choosing "Customize Toolbar...", and dragging the app into the toolbar.
 
 ### Default Folder X
 
@@ -313,13 +292,6 @@ Notification
 
 Use an external editor for text boxes
 
-### Spirited Away
-
-[Spirited Away](http://drikin.com/2010/11/spirited-away.html) auto-hides unused apps.
-
-### Rubber
-
-[Rubber](http://launchpad.net/rubber) is a command-line tool to make it easier to build LaTeX documents.
 
 ### Soulver
 
@@ -384,31 +356,17 @@ http://focusbarapp.com/
 	. /usr/local/etc/bash_completion
 
 
-## Ack
 
-<http://betterthangrep.com>
+## Monosnap
 
-(I've since moved on to grin)
-
-My .ackrc looks like:
-
-	--type-set=restructuredtext=.rst
-	--type-set=xslfo=.fo
-	--type-set=svg=.svg
-	--type=noxslfo
-	--nohtml
-	--nojs
-	--nosvg
-	--ignore-dir=.venv
-	--pager=less -R
+Trying [Monosnap](http://monosnap.com/) as an alternative to Skitch
 
 ## Grin
-grin has replaced ack for me
+[grin](http://pypi.python.org/pypi/grin) is a Python-version of ack, great for text searching.
 
 ## Pythonbrew
 
 Useful for testing against Python 3.X stuff.
-
 
 
 ## SCM Breeze
@@ -439,7 +397,6 @@ In myapp/.env
 	use_env myapp
 	
 
-
 ## Hub
 
 https://github.com/defunkt/hub
@@ -450,8 +407,9 @@ Install and setup:
 	hub config --global github.user lorin
 
 
-## Sequel Pro (MySQL GUI)
+## Sequel Pro
 
+GUI for MySQL.
 
 
 ## Keyboard system preferences
@@ -474,7 +432,28 @@ Paste as Courier New 12pt: `Cmd-Opt-V`
 
 
 
-## Stuff I'm not using right now, but looks good
+## Stuff I'm not using right now
+
+This is stuf I used to use but don't do so anymore, but want to keep track of.
+
+## Ack
+
+<http://betterthangrep.com>
+
+(I've since moved on to grin)
+
+My .ackrc looks like:
+
+	--type-set=restructuredtext=.rst
+	--type-set=xslfo=.fo
+	--type-set=svg=.svg
+	--type=noxslfo
+	--nohtml
+	--nojs
+	--nosvg
+	--ignore-dir=.venv
+	--pager=less -R
+
 
 ### GeekTool
 
@@ -485,3 +464,32 @@ Display stuff on your desktop, it's in the App store for Lion.
 Exactly what you'd expect, from the same guy who does geektool.
 
 
+### Google Chrome Canary
+
+Bleeding edge google code
+
+
+### Open Terminal Here
+
+"Open Terminal Here" allows you to open up a terminal window in the current Finder directory. 
+
+The original app can be found at <http://www.entropy.ch/software/applescript>. Download the [OpenTerminalHere.app.zip](http://www.entropy.ch/software/applescript) file from that site. 
+
+I use a slightly customized version that uses iTerm2 instead, and uses an updated icon. 
+
+There's a more modern-looking icon hosted at <http://henrik.nyh.se/2007/10/open-terminal-here-and-glob-select-in-leopard-finder>. As described on that site, save the [openterminalhere-droplet.icns](http://henrik.nyh.se/uploads/openterminalhere-droplet.icns) file, and replace OpenTerminalHere.app/Contents/Resources/droplet.icns with openterminalhere-droplet.icns.
+
+To get it to open up a terminal window with iTerm2, I've edited the OpenTerminalHere.app/Contents/Resources/Scripts/main.scpt file and modify the process_item function (note: I've renamed my iTerm2 app from iTerm.app to iTerm2.app):
+
+	on process_item(this_item)		set the_path to POSIX path of this_item		repeat until the_path ends with "/"			set the_path to text 1 thru -2 of the_path		end repeat				set cmd to "cd " & quoted form of the_path & " && echo $'\\ec'"				tell application "iTerm2"			activate			set myterm to (make new terminal)			tell myterm				launch session "Default Session"				tell the last session					write text cmd				end tell			end tell		end tell			end process_item
+
+
+Finally, add this app to the Finder toolbar by right-clicking on the toolbar, choosing "Customize Toolbar...", and dragging the app into the toolbar.
+
+### Spirited Away
+
+[Spirited Away](http://drikin.com/2010/11/spirited-away.html) auto-hides unused apps.
+
+### Rubber
+
+[Rubber](http://launchpad.net/rubber) is a command-line tool to make it easier to build LaTeX documents.
