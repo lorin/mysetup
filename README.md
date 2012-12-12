@@ -360,9 +360,7 @@ http://focusbarapp.com/
 
 
 ## Monosnap
-I've since moved on to [grin](http://pypi.python.org/pypi/grin/).
-
-Trying [Monosnap](http://monosnap.com/) as an alternative to Skitch
+[Monosnap](http://monosnap.com/) is a simple screenshot tool, an alternative to Skitch.
 
 ## Grin
 [grin](http://pypi.python.org/pypi/grin) is a Python-version of ack, great for text searching.
