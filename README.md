@@ -1,21 +1,22 @@
 # My Setup
 
-Here are some details about my Mac OS X setup, mostly for personal reference for moving to a new machine. Yes, I have [NADD].(http://www.randsinrepose.com/archives/2003/07/10/nadd.html)
+Here are some details about my Mac OS X setup, mostly for personal reference for moving to a new machine.
+Yes, I have [NADD](http://www.randsinrepose.com/archives/2003/07/10/nadd.html).
 
 ## Every day
 
 ### VoodooPad
 
-I live in VoodooPad, it's where I keep all of my notes. 
+I live in VoodooPad, it's where I keep all of my notes.
 
 
-I use a couple of custom VP plugins. 
+I use a couple of custom VP plugins.
 
 #### Copy VoodooPad Link to Clipboard
 
 This copies a link to a VP page, such as x-voodoopad-item://74a35c9a-d8e0-4314-a5ff-272a8fdd9b58
 
-It lives at `Library/Application Support/VoodooPad/Script PlugIns/VoodooPadLink.py`. I have this mapped to Cmd-Opt-L: 
+It lives at `Library/Application Support/VoodooPad/Script PlugIns/VoodooPadLink.py`. I have this mapped to Cmd-Opt-L:
 
     VPScriptMenuTitle = "Copy VoodooPad Link to clipboard"
 
@@ -33,13 +34,13 @@ It lives at `Library/Application Support/VoodooPad/Script PlugIns/VoodooPadLink.
 
 #### Paste as Courier New 12 pt
 
-This pastes the text in the clipboard as courier, and then returns the formatting to what it was before. 
+This pastes the text in the clipboard as courier, and then returns the formatting to what it was before.
 
 	VPScriptMenuTitle = "Paste as Courier New 12pt"
-	
+
 	from AppKit import *
 	from Foundation import *
-	
+
 	def main(windowController, *args, **kwargs):
 		textView = windowController.textView()
 		f = NSFont.fontWithName_size_("Courier New", 12)
@@ -69,9 +70,9 @@ Quicksilver is my main launcher app. I use the new Nostromo interface. Custom tr
  * Open journal.vpdoc (Opt-J)
  * Open tasks.taskpaper (Opt-Cmd-G)
  * Launch Plain clip (Cmd-V)
- 
+
  I make heavy use of the Remote Hosts Module plugin. This allows you to define a ``~/.hosts`` file which lists the hosts that can be ssh'd to.
- 
+
 ### iTerm2
 
 iTerm2 is my terminal replacement. I have it configured to handle ssh:// URLs so that it works with the QuickSilver Remote Hosts Plugin. You do:
@@ -80,11 +81,11 @@ iTerm2 is my terminal replacement. I have it configured to handle ssh:// URLs so
 
 I like the "White on Black" preset coloring scheme.
 
- 
- 
+
+
 ### TaskPaper
 
-TaskPaper is my GTD todo list tool. I like the plain text format. It syncs to the iPhone using Dropbox. 
+TaskPaper is my GTD todo list tool. I like the plain text format. It syncs to the iPhone using Dropbox.
 
 ### Sublime Text 2
 
@@ -132,7 +133,7 @@ Key Bindings - User (Default (OSX).sublime-keymap):
 
 	[
 		{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
-	
+
 		// Find in project
 		{ "keys": ["ctrl+alt+super+f"],  "command": "show_panel", "args": {"panel": "find_in_files", "location": "<open folders>" } },
 
@@ -141,7 +142,7 @@ Key Bindings - User (Default (OSX).sublime-keymap):
 
 		// Find the Python definition of the thing the cursor is on
 		{ "keys": ["super+."], "command": "goto_python_definition" },
-		
+
 		// Run a PEP8 check
 		{ "keys": ["super+p"], "command": "sublimelinter", "args": {"action": "lint"} },
 
@@ -150,7 +151,7 @@ Key Bindings - User (Default (OSX).sublime-keymap):
 		// Multiple carets
 		{ "keys": ["super+alt+up"], "command": "select_lines", "args": {"forward": false} },
 		{ "keys": ["super+alt+down"], "command": "select_lines", "args": {"forward": true} }
-	
+
 		// Overrides F2 mapping in one of the packages
 		{ "keys": ["f2"], "command": "next_bookmark" },
 
@@ -161,14 +162,14 @@ Key Bindings - User (Default (OSX).sublime-keymap):
 
 
 	Python settings (File Settings -> Syntax Specific)
-	
+
 	{
 		// The number of spaces a tab is considered equal to
 		"tab_size": 4,
-	
+
 		// Set to true to insert spaces when tab is pressed
 		"translate_tabs_to_spaces": true,
-	
+
 		// Set to "none" to turn off drawing white space, "selection" to draw only the
 		// white space within the selection, and "all" to draw all white space
 		"draw_white_space": "all"
@@ -180,13 +181,13 @@ Restructured text settings (File Settings -> Syntax Specific)
 	{
 		// The number of spaces a tab is considered equal to
 		"tab_size": 4,
-	
+
 		// Set to true to insert spaces when tab is pressed
 		"translate_tabs_to_spaces": false,
-	
+
 		"draw_white_space": "all"
-	
-	
+
+
 	}
 
 
@@ -201,7 +202,7 @@ Sublime Linter settings (Package Settings -> Sublime Linter -> Settings - User)
 
 ### AntiRSI
 
-[AntiRSI](http://tech.inhelsinki.nl/antirsi/) protects my wrists. Sold nowadays in the Mac app store. There's also a modified version at http://sabi.net/nriley/software/#antirsi 
+[AntiRSI](http://tech.inhelsinki.nl/antirsi/) protects my wrists. Sold nowadays in the Mac app store. There's also a modified version at http://sabi.net/nriley/software/#antirsi
 
 
 ### 1Password
@@ -211,7 +212,7 @@ Sublime Linter settings (Package Settings -> Sublime Linter -> Settings - User)
 
 ### MenuMeters
 
-This shows you CPU, memory, and network usage in the title bar. 
+This shows you CPU, memory, and network usage in the title bar.
 
 
 ### Homebrew
@@ -229,7 +230,7 @@ I really only use the following snippets, but boy do I use them:
 
 ### Tower
 
-Tower is my Git GUI. 
+Tower is my Git GUI.
 
 ### Path Finder
 
@@ -240,7 +241,7 @@ Path Finder is my finder replacement.
 
 ### Default Folder X
 
-I use [Default Folder X](http://www.stclairsoft.com/DefaultFolderX/) to jump to an open Finder or Path Finder window in an open/save dialog box. 
+I use [Default Folder X](http://www.stclairsoft.com/DefaultFolderX/) to jump to an open Finder or Path Finder window in an open/save dialog box.
 
 
 ### Mou
@@ -304,11 +305,11 @@ Fast task switching
 ### Fluid
 
 I use Fluid to make certain web pages look like apps
- 
+
 ## RegExhibit
 
 Regex helper
- 
+
 ## BibDesk
 
 BibTex-based reference manager
@@ -326,9 +327,9 @@ http://focusbarapp.com/
     export EDITOR='subl -w'
     export PATH=$PATH:/usr/texbin:/Users/lorin/work/scripts
 
-	# Pass color control codes to terminal 
+	# Pass color control codes to terminal
     export LESS=-R
-    
+
     # SVN shortcuts
 	alias svnadd="svn st | grep '^?' | cut -c9- | perl -p -e 's/\n/\0/;' | xargs -0 svn add"
 	alias svnrm="svn st | grep '^!' | cut -c9- | perl -p -e 's/\n/\0/;' | xargs -0 svn rm"
@@ -336,11 +337,11 @@ http://focusbarapp.com/
 	alias svncommit="svnadd && svnrm && svn commit"
 	alias svnup="svn up -N"
 	alias svnst="svn st"
-	
+
 	alias pf='open -a "Path Finder.app"'
 	alias ip="curl icanhazip.com"
-	
-	
+
+
 	# Reset the dock
 	alias dock="killall Dock"
 
@@ -351,13 +352,13 @@ http://focusbarapp.com/
 	function big {
         osascript -e "tell application \"Quicksilver\" to show large type \"$1\""
 	}
-	
+
 	# bash completion, installed via homebrew
 	. /usr/local/etc/bash_completion
 
 
-
 ## Monosnap
+I've since moved on to [grin](http://pypi.python.org/pypi/grin/).
 
 Trying [Monosnap](http://monosnap.com/) as an alternative to Skitch
 
@@ -377,7 +378,7 @@ https://github.com/ndbroadbent/scm_breeze
 
     git clone git://github.com/ndbroadbent/scm_breeze.git ~/.scm_breeze
     ~/.scm_breeze/install.sh
-    source ~/.bashrc 
+    source ~/.bashrc
 
 ## Autojump (jumpstat)
 
@@ -395,7 +396,7 @@ In ~/.profile:
 In myapp/.env
 
 	use_env myapp
-	
+
 
 ## Hub
 
@@ -471,17 +472,36 @@ Bleeding edge google code
 
 ### Open Terminal Here
 
-"Open Terminal Here" allows you to open up a terminal window in the current Finder directory. 
+"Open Terminal Here" allows you to open up a terminal window in the current Finder directory.
 
-The original app can be found at <http://www.entropy.ch/software/applescript>. Download the [OpenTerminalHere.app.zip](http://www.entropy.ch/software/applescript) file from that site. 
+The original app can be found at <http://www.entropy.ch/software/applescript>. Download the [OpenTerminalHere.app.zip](http://www.entropy.ch/software/applescript) file from that site.
 
-I use a slightly customized version that uses iTerm2 instead, and uses an updated icon. 
+I use a slightly customized version that uses iTerm2 instead, and uses an updated icon.
 
 There's a more modern-looking icon hosted at <http://henrik.nyh.se/2007/10/open-terminal-here-and-glob-select-in-leopard-finder>. As described on that site, save the [openterminalhere-droplet.icns](http://henrik.nyh.se/uploads/openterminalhere-droplet.icns) file, and replace OpenTerminalHere.app/Contents/Resources/droplet.icns with openterminalhere-droplet.icns.
 
 To get it to open up a terminal window with iTerm2, I've edited the OpenTerminalHere.app/Contents/Resources/Scripts/main.scpt file and modify the process_item function (note: I've renamed my iTerm2 app from iTerm.app to iTerm2.app):
 
-	on process_item(this_item)		set the_path to POSIX path of this_item		repeat until the_path ends with "/"			set the_path to text 1 thru -2 of the_path		end repeat				set cmd to "cd " & quoted form of the_path & " && echo $'\\ec'"				tell application "iTerm2"			activate			set myterm to (make new terminal)			tell myterm				launch session "Default Session"				tell the last session					write text cmd				end tell			end tell		end tell			end process_item
+	on process_item(this_item)
+		set the_path to POSIX path of this_item
+		repeat until the_path ends with "/"
+			set the_path to text 1 thru -2 of the_path
+		end repeat
+
+		set cmd to "cd " & quoted form of the_path & " && echo $'\\ec'"
+
+		tell application "iTerm2"
+			activate
+			set myterm to (make new terminal)
+			tell myterm
+				launch session "Default Session"
+				tell the last session
+					write text cmd
+				end tell
+			end tell
+		end tell
+
+	end process_item
 
 
 Finally, add this app to the Finder toolbar by right-clicking on the toolbar, choosing "Customize Toolbar...", and dragging the app into the toolbar.
