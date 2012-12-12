@@ -7,7 +7,7 @@ Yes, I have [NADD](http://www.randsinrepose.com/archives/2003/07/10/nadd.html).
 
 ### VoodooPad
 
-I live in VoodooPad, it's where I keep all of my notes.
+I live in [VoodooPad](http://flyingmeat.com/voodoopad/), it's where I keep all of my notes.
 
 
 I use a couple of custom VP plugins.
@@ -62,16 +62,19 @@ This pastes the text in the clipboard as courier, and then returns the formattin
 						textView.didChangeText()
 
 
-
 ### Quicksilver
 
-Quicksilver is my main launcher app. I use the new Nostromo interface. Custom triggers I've added:
+[Quicksilver](http://qsapp.com) is my main launcher app. I use the new Nostromo interface. Custom triggers I've added:
 
  * Open journal.vpdoc (Opt-J)
  * Open tasks.taskpaper (Opt-Cmd-G)
  * Launch Plain clip (Cmd-V)
 
  I make heavy use of the Remote Hosts Module plugin. This allows you to define a ``~/.hosts`` file which lists the hosts that can be ssh'd to.
+ 
+### FoldingText
+
+I use [FoldingText](http://www.foldingtext.com/) for ad-hoc todo list, and code and config fragments. Basically, it holds my context information when I'm working on a particular development task.
 
 ### iTerm2
 
@@ -80,7 +83,6 @@ iTerm2 is my terminal replacement. I have it configured to handle ssh:// URLs so
     iTerm -> Preferences... -> Profiles -> (Default profile) -> General -> URL Schemes -> ssh
 
 I like the "White on Black" preset coloring scheme.
-
 
 
 ### TaskPaper
@@ -193,16 +195,16 @@ Restructured text settings (File Settings -> Syntax Specific)
 
 Sublime Linter settings (Package Settings -> Sublime Linter -> Settings - User)
 
-{
-	// Override default setting, which ignores E501
-    "pep8_ignore":[ ]
-}
+    {
+	    // Override default setting, which ignores E501
+        "pep8_ignore":[ ]
+    }
 
 
 
 ### AntiRSI
 
-[AntiRSI](http://tech.inhelsinki.nl/antirsi/) protects my wrists. Sold nowadays in the Mac app store. There's also a modified version at http://sabi.net/nriley/software/#antirsi
+[AntiRSI](http://tech.inhelsinki.nl/antirsi/) protects my wrists. Sold nowadays in the Mac app store. There's also a modified version at <http://sabi.net/nriley/software/#antirsi>.
 
 
 ### 1Password
@@ -212,7 +214,7 @@ Sublime Linter settings (Package Settings -> Sublime Linter -> Settings - User)
 
 ### MenuMeters
 
-This shows you CPU, memory, and network usage in the title bar.
+[MenuMeters](http://www.ragingmenace.com/software/menumeters/) shows you CPU, memory, and network usage in the title bar.
 
 
 ### Homebrew
@@ -259,7 +261,7 @@ Screencasts
 
 ### SizeUp
 
-Window manpiluation, although I'm now playing with Moom.
+Window manipulation.
 
 ### Skitch
 
@@ -513,3 +515,7 @@ Finally, add this app to the Finder toolbar by right-clicking on the toolbar, ch
 ### Rubber
 
 [Rubber](http://launchpad.net/rubber) is a command-line tool to make it easier to build LaTeX documents.
+
+### Moom
+
+Moom is a competitor to SizeUp. 
