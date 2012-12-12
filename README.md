@@ -50,7 +50,7 @@ This pastes the text in the clipboard as courier, and then returns the formattin
 		s  = pb.stringForType_(NSStringPboardType)
 
 		if s is None:
-						return # in case we didn't have text on the clipboard
+			return # in case we didn't have text on the clipboard
 
 		attstr = NSMutableAttributedString.alloc().initWithString_(s)
 		attstr.setAttributes_range_(attrs, (0, len(s)))
@@ -58,8 +58,8 @@ This pastes the text in the clipboard as courier, and then returns the formattin
 		# wrapping our change in shouldChangeTextInRange_replacementString_ + didChangeText
 		# allows for free undo support
 		if textView.shouldChangeTextInRange_replacementString_(textView.selectedRange(), None):
-						textView.insertText_(attstr)
-						textView.didChangeText()
+			textView.insertText_(attstr)
+			textView.didChangeText()
 
 
 ### Quicksilver
