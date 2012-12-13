@@ -71,7 +71,7 @@ This pastes the text in the clipboard as courier, and then returns the formattin
  * Launch Plain clip (Cmd-V)
 
  I make heavy use of the Remote Hosts Module plugin. This allows you to define a ``~/.hosts`` file which lists the hosts that can be ssh'd to.
- 
+
 ### FoldingText
 
 I use [FoldingText](http://www.foldingtext.com/) for maintaining ad-hoc todo lists, code fragments and other text that's relevant to what I'm currently doing. Basically, it holds my context information when I'm working on a particular development task.
@@ -324,13 +324,14 @@ http://focusbarapp.com/
 
 	 PS1='[$(__git_ps1 "(%s) ")\u@\[\e[1;32m\]\h\[\e[1;0m\] \w]\n\$ '
 
-    PROMPT_COMMAND='echo -ne "\033]0;[local]: ${PWD}\007"'
-    export CLICOLOR=1
-    export EDITOR='subl -w'
-    export PATH=$PATH:/usr/texbin:/Users/lorin/work/scripts
+	PROMPT_COMMAND='echo -ne "\033]0;[local]: ${PWD}\007"'
+	export CLICOLOR=1
+	export EDITOR='subl -w'
+	export PATH=$PATH:/usr/texbin:/Users/lorin/work/scripts
 
-	# Pass color control codes to terminal
-    export LESS=-R
+	# Preserve highlighting, quit immediately without clearing if less than
+	# a screenful
+	export LESS="-RXF"
 
     # SVN shortcuts
 	alias svnadd="svn st | grep '^?' | cut -c9- | perl -p -e 's/\n/\0/;' | xargs -0 svn add"
@@ -342,17 +343,22 @@ http://focusbarapp.com/
 
 	alias pf='open -a "Path Finder.app"'
 	alias ip="curl icanhazip.com"
+	alias gf="git flow feature"
 
 
 	# Reset the dock
 	alias dock="killall Dock"
 
+	function man {
+	  open x-man-page://$1
+	}
+
 	function dir {
-        echo `pwd` | tr -d \\n | pbcopy
+		echo `pwd` | tr -d \\n | pbcopy
 	}
 
 	function big {
-        osascript -e "tell application \"Quicksilver\" to show large type \"$1\""
+		osascript -e "tell application \"Quicksilver\" to show large type \"$1\""
 	}
 
 	# bash completion, installed via homebrew
@@ -516,4 +522,4 @@ Finally, add this app to the Finder toolbar by right-clicking on the toolbar, ch
 
 ### Moom
 
-Moom is a competitor to SizeUp. 
+Moom is a competitor to SizeUp.
