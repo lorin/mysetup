@@ -382,7 +382,7 @@ Useful for testing against Python 3.X stuff.
 
 Git shortcuts
 
-https://github.com/ndbroadbent/scm_breeze
+<https://github.com/ndbroadbent/scm_breeze>
 
     git clone git://github.com/ndbroadbent/scm_breeze.git ~/.scm_breeze
     ~/.scm_breeze/install.sh
@@ -390,11 +390,11 @@ https://github.com/ndbroadbent/scm_breeze
 
 ## Autojump (jumpstat)
 
-https://github.com/joelthelion/autojump/wiki
+<https://github.com/joelthelion/autojump/wiki>
 
 ## autoenv
 
-https://github.com/kennethreitz/autoenv
+<https://github.com/kennethreitz/autoenv>
 
 
 In ~/.profile:
@@ -408,12 +408,27 @@ In myapp/.env
 
 ## Hub
 
-https://github.com/defunkt/hub
+<https://github.com/defunkt/hub>
 
 Install and setup:
 
 	brew install hub
 	hub config --global github.user lorin
+	
+## Friendly find
+
+<https://bitbucket.org/sjl/friendly-find>
+
+A friendly version of find. For example, instead of doing:
+
+    find . -name '*.feature'
+
+You do:
+
+    ffind .feature
+    
+    
+
 
 
 ## Sequel Pro
