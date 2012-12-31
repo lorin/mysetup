@@ -128,7 +128,8 @@ Settings - User (Preferences.sublime-settings)
 		],
 		"theme": "Soda Dark.sublime-theme",
 		"trim_trailing_white_space_on_save": true,
-		"shift_tab_unindent": true
+		"shift_tab_unindent": true,
+		"git_gutter_live_mode": false
 	}
 
 
