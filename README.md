@@ -104,6 +104,7 @@ Sublime Text 2 is my default text editor these days. Installed the following pac
  * [Gherkin](https://gist.github.com/864839) syntax highlighting
  * [MarkDownPreview](https://github.com/revolunet/sublimetext-markdown-preview) Markdown preview
  * [SublimeREPL](https://github.com/wuub/SublimeREPL) for running Python inside of Sublime Text
+ * [GitGutter](https://github.com/jisaacks/GitGutter) for showing changes to the current file.
 
 Settings - User (Preferences.sublime-settings)
 
