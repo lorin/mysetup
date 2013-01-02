@@ -106,34 +106,35 @@ Sublime Text 2 is my default text editor these days. Installed the following pac
  * [SublimeREPL](https://github.com/wuub/SublimeREPL) for running Python inside of Sublime Text
  * [GitGutter](https://github.com/jisaacks/GitGutter) for showing changes to the current file.
 
-Settings - User (Preferences.sublime-settings)
+#### Settings - User (Preferences.sublime-settings)
 
 	{
+		"auto_complete": true,
 		"auto_complete_commit_on_tab": true,
+		"auto_complete_selector": "source - (comment, string.quoted)",
 		"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 		"draw_white_space": "all",
 		"fade_inactive_panes": false,
 		"git_command": "/usr/bin/git",
+		"git_gutter_live_mode": false,
 		"highlight_line": true,
 		"hot_exit": false,
 		"ignored_packages":
 		[
-			"Vintage",
-			"Emmet"
+			"Vintage"
 		],
 		"remember_open_files": false,
 		"rulers":
 		[
 			78
 		],
-		"theme": "Soda Dark.sublime-theme",
-		"trim_trailing_white_space_on_save": true,
 		"shift_tab_unindent": true,
-		"git_gutter_live_mode": false
+		"theme": "Soda Dark.sublime-theme",
+		"trim_trailing_white_space_on_save": true
 	}
 
 
-Key Bindings - User (Default (OSX).sublime-keymap):
+#### Key Bindings - User (Default (OSX).sublime-keymap)
 
 	[
 		{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
