@@ -105,6 +105,7 @@ Sublime Text 2 is my default text editor these days. Installed the following pac
  * [MarkDownPreview](https://github.com/revolunet/sublimetext-markdown-preview) Markdown preview
  * [SublimeREPL](https://github.com/wuub/SublimeREPL) for running Python inside of Sublime Text
  * [GitGutter](https://github.com/jisaacks/GitGutter) for showing changes to the current file.
+ * [BracketHighlighter](https://github.com/facelessuser/BracketHighlighter) for highlighting brackets
 
 #### Settings - User (Preferences.sublime-settings)
 
@@ -415,7 +416,7 @@ Install and setup:
 
 	brew install hub
 	hub config --global github.user lorin
-	
+
 ## Friendly find
 
 <https://bitbucket.org/sjl/friendly-find>
@@ -427,8 +428,8 @@ A friendly version of find. For example, instead of doing:
 You do:
 
     ffind .feature
-    
-    
+
+
 
 
 
