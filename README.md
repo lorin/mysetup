@@ -129,10 +129,11 @@ Sublime Text 2 is my default text editor these days. Installed the following pac
 		[
 			78
 		],
+		"save_on_focus_lost": true,
 		"shift_tab_unindent": true,
 		"theme": "Soda Dark.sublime-theme",
-		"trim_trailing_white_space_on_save": true,
-		"save_on_focus_lost":true
+		"scroll_past_end": true,
+		"trim_trailing_white_space_on_save": true
 	}
 
 
