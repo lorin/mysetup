@@ -106,6 +106,7 @@ Sublime Text 2 is my default text editor these days. Installed the following pac
  * [SublimeREPL](https://github.com/wuub/SublimeREPL) for running Python inside of Sublime Text
  * [GitGutter](https://github.com/jisaacks/GitGutter) for showing changes to the current file.
  * [BracketHighlighter](https://github.com/facelessuser/BracketHighlighter) for highlighting brackets
+ * [Restructured Text Snippets](https://github.com/dbousamra/sublime-rst-completion) for code completion
 
 #### Settings - User (Preferences.sublime-settings)
 
@@ -163,9 +164,13 @@ Sublime Text 2 is my default text editor these days. Installed the following pac
 		// Overrides F2 mapping in one of the packages
 		{ "keys": ["f2"], "command": "next_bookmark" },
 
-		{ "keys": ["super+r"], "command": "show_panel", "args": {"panel": "replace"} }
+		{ "keys": ["super+r"], "command": "show_panel", "args": {"panel": "replace"} },
 
+		// Override ctrl-d because emmet redefines this
+		{ "keys": ["ctrl+d"], "command": "right_delete" },
 
+		// Override ctrl-e because emmet redefines this
+		{ "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} }
 	]
 
 
